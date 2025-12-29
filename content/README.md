@@ -1,3 +1,17 @@
+### Youtube Reference
+
+#### Node-RED - OpenPLC V4 Modbus Communication Tutorial
+
+<p align="center">
+
+<a href="https://www.youtube.com/watch?v=uHFYutyVTIM" target="\_blank">
+
+<img src="https://img.youtube.com/vi/uHFYutyVTIM/0.jpg" alt="YouTube Video Thumbnail" width="480" />
+
+</a>
+
+</p>
+
 # Open PLC V3 Runtime Installation
 ### Steps
 

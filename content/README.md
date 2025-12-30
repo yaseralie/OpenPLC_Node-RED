@@ -98,6 +98,20 @@ sudo ./install.sh linux
 ```
 sudo ./start_openplc.sh
 ```
+##### Kill Running OpenPLC
+Check running service:
+```
+sudo ps aux | grep openplc
+```
+Check Service:
+```
+systemctl list-units | grep openplc
+```
+Stop service
+```
+sudo systemctl stop openplc
+sudo systemctl disable openplc
+```
 
 # Desktop Editor
 Link:

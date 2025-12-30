@@ -112,6 +112,22 @@ Stop service
 sudo systemctl stop openplc
 sudo systemctl disable openplc
 ```
+##### If error on Ubuntu 24, change to 20.
+Uninstall Ubuntu from Apps:
+```
+Settings → Apps → Installed apps
+```
+Open PowerShell (Run as Administrator):
+```
+wsl --list
+```
+```
+wsl --unregister Ubuntu
+```
+Install
+```
+wsl --install -d Ubuntu-22.04
+```
 
 # Desktop Editor
 Link:

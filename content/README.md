@@ -12,7 +12,7 @@
 
 </p>
 
-# Open PLC V3 Runtime Installation
+# PLC V3 Runtime Installation (Linux Debian)
 ### Steps
 
 
@@ -80,7 +80,24 @@ UPDATE Users
 SET password='openplc'
 WHERE username='openplc';
 ```
+# PLC V3 Runtime Installation (Windows 11)
+### Steps
+##### 1. Install Ubuntu
+Install Ubuntu from Microsoft Store
 
+##### 2. Clone
+```
+git clone https://github.com/thiagoralves/OpenPLC_v3.git
+cd OpenPLC_v3
+```
+##### 3. Install
+```
+sudo ./install.sh linux
+```
+##### 4. Run OpenPLC_v3
+```
+sudo ./start_openplc.sh
+```
 
 # Desktop Editor
 Link:

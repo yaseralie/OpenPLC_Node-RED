@@ -84,6 +84,11 @@ WHERE username='openplc';
 ### Steps
 ##### 1. Install Ubuntu
 Install Ubuntu from Microsoft Store
+Or you can install from PowerShell
+Open PowerShell (Run as Administrator):
+```
+wsl --install -d Ubuntu-22.04
+```
 
 ##### 2. Clone
 ```

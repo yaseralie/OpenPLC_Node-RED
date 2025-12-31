@@ -16,7 +16,7 @@
 </a>
 </p>
 
-# PLC V3 Runtime Installation (Linux Debian)
+# OpenPLC V3 Runtime Installation (Linux Debian)
 ### Steps
 
 
@@ -84,7 +84,7 @@ UPDATE Users
 SET password='openplc'
 WHERE username='openplc';
 ```
-# PLC V3 Runtime Installation (Windows 11)
+# OpenPLC V3 Runtime Installation (Windows 11)
 ### Steps
 ##### 1. Install Ubuntu
 Install Ubuntu from Microsoft Store

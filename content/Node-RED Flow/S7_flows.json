@@ -1,0 +1,528 @@
+[
+    {
+        "id": "e029a6402c9fbbe7",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "99953418daca3e8f",
+        "type": "group",
+        "z": "e029a6402c9fbbe7",
+        "name": "Counter & Relay",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f56d13c4e35cb716",
+            "ac71a0091fc98bc4",
+            "c1e12b9d2f8989f5",
+            "c222abdcc01d5465",
+            "427fed8c4ff33c5a",
+            "e17c8dea544195b2",
+            "4687aacf8a791dd2",
+            "bd8c1994cdaf4ce4",
+            "bbb55fa023c4e25c",
+            "661e1a8cacedd42e",
+            "0d143807e328a760",
+            "3ea07aca45c591c5",
+            "f5fdd257cf8adae1",
+            "18dce9f6107299c5"
+        ],
+        "x": 114,
+        "y": 79,
+        "w": 472,
+        "h": 402
+    },
+    {
+        "id": "2bb1e76c8d1810de",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#1c3ec4",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#1c3c9b",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#4B7930",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6db046",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#4b7930",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7f487893a3056a18",
+        "type": "ui_tab",
+        "name": "Open PLC S7",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b67cc55059f911fe",
+        "type": "ui_group",
+        "name": "Counter & Relay Simulation",
+        "tab": "7f487893a3056a18",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3dcc50ca33d6de6e",
+        "type": "global-config",
+        "env": []
+    },
+    {
+        "id": "52f6a850197acd7f",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "127.0.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "tsap",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "500",
+        "timeout": "2000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "Q4.1",
+                "name": "Start_State"
+            },
+            {
+                "addr": "Q4.3",
+                "name": "Dowtime_State"
+            },
+            {
+                "addr": "DB1002,WORD0",
+                "name": "Counter"
+            },
+            {
+                "addr": "Q4.0",
+                "name": "Start_Contact"
+            },
+            {
+                "addr": "Q4.2",
+                "name": "Downtime_Contact"
+            },
+            {
+                "addr": "Q4.4",
+                "name": "Counter_Up"
+            },
+            {
+                "addr": "Q4.5",
+                "name": "Reset_Counter"
+            }
+        ]
+    },
+    {
+        "id": "f56d13c4e35cb716",
+        "type": "ui_switch",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "name": "",
+        "label": "Relay Start",
+        "tooltip": "",
+        "group": "b67cc55059f911fe",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "0d143807e328a760"
+            ]
+        ]
+    },
+    {
+        "id": "ac71a0091fc98bc4",
+        "type": "ui_switch",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "name": "",
+        "label": "Relay Downtime",
+        "tooltip": "",
+        "group": "b67cc55059f911fe",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 220,
+        "y": 160,
+        "wires": [
+            [
+                "3ea07aca45c591c5"
+            ]
+        ]
+    },
+    {
+        "id": "427fed8c4ff33c5a",
+        "type": "ui_button",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "name": "",
+        "group": "b67cc55059f911fe",
+        "order": 5,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "label": "Counter Up",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "f5fdd257cf8adae1"
+            ]
+        ]
+    },
+    {
+        "id": "e17c8dea544195b2",
+        "type": "ui_button",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "name": "",
+        "group": "b67cc55059f911fe",
+        "order": 6,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "label": "Reset Counter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 380,
+        "wires": [
+            [
+                "18dce9f6107299c5"
+            ]
+        ]
+    },
+    {
+        "id": "4687aacf8a791dd2",
+        "type": "ui_text",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "group": "b67cc55059f911fe",
+        "order": 7,
+        "width": "8",
+        "height": "3",
+        "name": "",
+        "label": "Counter",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "38",
+        "color": "#ffffff",
+        "x": 440,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "c1e12b9d2f8989f5",
+        "type": "ui_led",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "order": 3,
+        "group": "b67cc55059f911fe",
+        "width": "4",
+        "height": "1",
+        "label": "Start",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c222abdcc01d5465",
+        "type": "ui_led",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "order": 4,
+        "group": "b67cc55059f911fe",
+        "width": "4",
+        "height": "1",
+        "label": "Downtime",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "bd8c1994cdaf4ce4",
+        "type": "s7 in",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "endpoint": "52f6a850197acd7f",
+        "mode": "single",
+        "variable": "Start_State",
+        "diff": true,
+        "name": "",
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "c1e12b9d2f8989f5"
+            ]
+        ]
+    },
+    {
+        "id": "bbb55fa023c4e25c",
+        "type": "s7 in",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "endpoint": "52f6a850197acd7f",
+        "mode": "single",
+        "variable": "Dowtime_State",
+        "diff": true,
+        "name": "",
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "c222abdcc01d5465"
+            ]
+        ]
+    },
+    {
+        "id": "661e1a8cacedd42e",
+        "type": "s7 in",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "endpoint": "52f6a850197acd7f",
+        "mode": "single",
+        "variable": "Counter",
+        "diff": true,
+        "name": "",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "4687aacf8a791dd2"
+            ]
+        ]
+    },
+    {
+        "id": "0d143807e328a760",
+        "type": "s7 out",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "endpoint": "52f6a850197acd7f",
+        "variable": "Start_Contact",
+        "name": "",
+        "x": 460,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3ea07aca45c591c5",
+        "type": "s7 out",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "endpoint": "52f6a850197acd7f",
+        "variable": "Downtime_Contact",
+        "name": "",
+        "x": 470,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f5fdd257cf8adae1",
+        "type": "s7 out",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "endpoint": "52f6a850197acd7f",
+        "variable": "Counter_Up",
+        "name": "",
+        "x": 450,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "18dce9f6107299c5",
+        "type": "s7 out",
+        "z": "e029a6402c9fbbe7",
+        "g": "99953418daca3e8f",
+        "endpoint": "52f6a850197acd7f",
+        "variable": "Reset_Counter",
+        "name": "",
+        "x": 460,
+        "y": 380,
+        "wires": []
+    }
+]

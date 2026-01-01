@@ -85,7 +85,7 @@ SET password='openplc'
 WHERE username='openplc';
 ```
 # OpenPLC V3 Runtime Installation (Windows 11)
-### Steps
+### Steps (These steps for openplc v.3, now available runtme for windows, you can download it)
 ##### 1. Install Ubuntu
 Install Ubuntu from Microsoft Store
 Or you can install from PowerShell
